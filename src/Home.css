@@ -1,0 +1,37 @@
+
+.homepage {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .header img {
+    width: 60px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .header h1 {
+    color: #555; /* Dark gray text color */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recent-recipe {
+    margin-top: 20px;
+  }
+  
+  .recent-recipe h2 {
+    font-size: 24px;
+    color: #333; /* Dark text color */
+  }
+  
+ 

@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/* App.css - main CSS file */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4e4d9; /* Light peach background */
+  color: #564b47;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #9b786e; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar button {
+  background-color: #e8b793; /* Light orange background */
+  color: #564b47; 
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar button:hover {
+  background-color: #ff9c5b; 
+}
+
+/* Homepage Styles */
+.homepage {
+  text-align: center;
+  margin: 20px;
+}
+
+.homepage img {
+  max-width: 100%;
+  height: auto;
+}
+
+.homepage h1 {
+  color: #ff9c5b; 
+  margin: 20px 0;
+}
+
+.homepage a {
+  text-decoration: none;
+}
+
+/* Recipes Page Styles */
+.recipes {
+  text-align: center;
+  margin: 20px;
+}
+
+.recipes button {
+  background-color: #e8b793; 
+  color: #564b47; 
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.recipes button:hover {
+  background-color: #ff9c5b; 
+}
+
+/* About Me Page Styles */
+.about-me {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffe5c4; 
+  border-radius: 10px;
+}
+
+/* Blog Post Form Styles */
+.blog-post-form {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffe5c4; 
+  border-radius: 10px;
 }
