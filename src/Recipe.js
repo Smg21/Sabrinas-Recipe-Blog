@@ -1,14 +1,31 @@
+import React, { useState } from 'react';
+import RecipeForm from './RecipeForm';
+import RecipeList from './RecipeList';
+import RecipeSort from './RecipeSort';
 
+function Recipe() {
+  const [recipes, setRecipes] = useState([]);
+  const [sortBy, setSortBy] = useState('');
 
-import React from 'react';
+  const addRecipe = (recipe) => {
+    setRecipes([...recipes, recipe]);
+  };
 
-function Recipe({ recipe }) {
+  const sortedRecipes = [...recipes].sort((a, b) => {
+    if (sortBy === 'title') {
+      return a.title.localeCompare(b.title);
+    } else if (sortBy === 'date') {
+      return b.id - a.id;
+    } else if (sortBy === 'cookTime') {
+      return a.cookTime - b.cookTime;
+    }
+  });
+
   return (
-    <div className="recipe">
-      <img src={recipe.image} alt={recipe.title} />
-      <h3>{recipe.title}</h3>
-      <p>{recipe.description}</p>
-      <a href={recipe.link}>View Recipe</a>
+    <div>
+      <RecipeForm addRecipe={addRecipe} />
+      <RecipeSort setSortBy={setSortBy} />
+      <RecipeList recipes={sortedRecipes} />
     </div>
   );
 }
