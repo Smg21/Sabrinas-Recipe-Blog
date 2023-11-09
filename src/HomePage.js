@@ -1,5 +1,7 @@
 import React from 'react';
 import './Home.css';
+import fakeRecipes from './FakeRecipe';
+import Recipe from './Recipe';
 
 function HomePage() {
   return (
@@ -17,7 +19,11 @@ function HomePage() {
         </section>
         <section className="featured-recipes">
           <h2>Featured Recipes</h2>
-          {/* Add featured recipe components here */}
+          <div className="recipe-list">
+            {fakeRecipes.map((recipe) => (
+              <Recipe key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
         </section>
       </div>
     </div>
@@ -25,3 +31,9 @@ function HomePage() {
 }
 
 export default HomePage;
+
+
+
+
+
+
