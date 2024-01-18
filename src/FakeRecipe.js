@@ -43,7 +43,7 @@ const fakeRecipes = [
     id: 6,
     title: "Chicken Curry",
     description: "Delicious Easy To Make Chicken Curry",
-    ingredients: ["Butter", "Eggs", "Salt", "Flour", "Milk", "Vanilla"],
+    ingredients: ["Butter", "Curry Sauce", "Salt", "Tikka Masala", "Milk", "Chicken"],
     image: "chicken_curry.jpg",
     link: "/recipe/chicken-curry",
   },

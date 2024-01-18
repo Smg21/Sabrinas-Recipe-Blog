@@ -12,7 +12,7 @@ function RecipesPage({ recipes, addRecipe, sortBy, setSortBy }) {
       <RecipeSort setSortBy={setSortBy} />
       <div className="recipe-list">
         {recipes.map((recipe) => (
-          <Recipe key={recipe.id} recipe={recipe} />
+          <Recipe key={recipe.id} recipe={recipe}  addRecipe={addRecipe}/>
         ))}
       </div>
     </div>

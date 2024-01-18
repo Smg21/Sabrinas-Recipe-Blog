@@ -6,9 +6,15 @@ import RecipeSort from './RecipeSort';
 function Recipe() {
   const [recipes, setRecipes] = useState([]);
   const [sortBy, setSortBy] = useState('');
+  const [newRecipe, setNewRecipe] = useState({ title: '', id: 0, cookTime: 0 });
 
-  const addRecipe = (recipe) => {
-    setRecipes([...recipes, recipe]);
+  const addRecipe = () => {
+    // Validate the new recipe data, and add it to the recipes list
+    if (newRecipe.title.trim() !== '') {
+      setRecipes([...recipes, newRecipe]);
+      // Clear the new recipe form after adding it
+      setNewRecipe({ title: '', id: 0, cookTime: 0 });
+    }
   };
 
   const sortedRecipes = [...recipes].sort((a, b) => {
@@ -23,9 +29,14 @@ function Recipe() {
 
   return (
     <div>
-      <RecipeForm addRecipe={addRecipe} />
+      <RecipeForm
+        addRecipe={addRecipe}
+        newRecipe={newRecipe}
+        setNewRecipe={setNewRecipe}
+      />
       <RecipeSort setSortBy={setSortBy} />
       <RecipeList recipes={sortedRecipes} />
+      <button onClick={addRecipe}>Add Recipe</button>
     </div>
   );
 }
