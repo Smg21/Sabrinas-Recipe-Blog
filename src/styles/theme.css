@@ -1,0 +1,63 @@
+/* Global theme colors */
+:root {
+    --primary-color: #F2ACB9; /* Baby Pink */
+    --secondary-color: #FFB5C3; /* Another shade of Baby Pink */
+    --tertiary-color: #F9B9A5; /* Light Coral-Pink */
+    --dark-pink-color: #D99AA5; /* Darker Pink */
+    --complementary-color1: #95A686; /* Soft Green */
+    --complementary-color2: #D4F2B8; /* Light Green */
+    --complementary-color3: #3D7899; /* Rich Blue */
+    --complementary-color4: #65A695; /* Teal */
+    --complementary-color5: #A0F2DD; /* Light Teal */
+    --complementary-hover-color: #B37F88; /* Complementary color to Baby Pink for hover */
+    --accent-color: #E6BE8A; /* Pale Gold */
+    --dark-color: #4a4a4a; /* Dark Gray for legibility */
+    --light-color: #f9f9f9; /* Light Gray */
+  }
+  
+  /* General body styles */
+  body {
+    background-color: var(--primary-color); /* Baby Pink */
+    color: var(--dark-color); /* Dark Gray for body text */
+    font-family: 'Dancing Script', cursive, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    color: var(--accent-color); /* Pale Gold for headings */
+  }
+  
+  a {
+    color: var(--complementary-color3); /* Rich Blue for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--complementary-color5); /* Light Teal for hover effect */
+  }
+  
+  button {
+    background-color: var(--complementary-color3); /* Rich Blue */
+    color: var(--accent-color); /* Pale Gold for button text */
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Dancing Script', cursive;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--complementary-color4); /* Teal */
+    color: white; /* White text when button is green */
+  }
+  
+  input, textarea {
+    border: 2px solid var(--tertiary-color); /* Coral border for inputs */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  

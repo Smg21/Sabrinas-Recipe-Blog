@@ -1,47 +1,86 @@
 /* App.css */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Dancing Script', cursive, Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--primary-color); /* Baby Pink */
+  color: var(--text-color); /* Dark Gray */
 }
 
 .App {
   text-align: center;
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  color: var(--accent-color); /* Pale Gold for headings */
+}
+
+button {
+  font-family: 'Dancing Script', cursive;
+  background-color: var(--tertiary-color); /* Light Coral-Pink */
+  color: var(--accent-color); /* Pale Gold */
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color); /* Lighter pink hover */
 }
 
 /* NavigationBar.css */
 .navbar {
-  background-color: #333;
+  background-color: var(--complementary-color3); /* Rich Blue */
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: var(--accent-color); /* Pale Gold text */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: var(--complementary-color4); /* Teal */
+  color: white; /* White text on hover when nav bar turns teal */
+}
+
+.navbar a.active {
+  background-color: var(--complementary-color1); /* Soft Green for active page */
   color: black;
 }
 
 /* HomePage.css */
 .homepage {
   text-align: center;
+  background-color: var(--primary-color); /* Baby Pink */
+  font-family: 'Dancing Script', cursive, Arial, sans-serif;
 }
 
 .header {
-  background-color: #f8f8f8;
+  background-color: var(--secondary-color); /* Lighter Baby Pink */
   padding: 20px;
+  border-bottom: 5px solid var(--complementary-color3); /* Rich Blue border */
 }
 
 .header img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+/* Sabrina's Favorite Recipes Styling */
+.header h1 {
+  color: var(--accent-color); /* Pale Gold text */
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem; /* Larger, elegant font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .featured-recipes {
@@ -52,24 +91,35 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 20px;
 }
 
 .recipe {
   width: 30%;
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 15px;
+  border: 2px solid var(--tertiary-color); /* Light Coral-Pink border */
+  border-radius: 10px;
+  background-color: var(--secondary-color); /* Light Baby Pink */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .recipe img {
   max-width: 100%;
-  height: auto;
+  border-radius: 10px;
 }
 
-/* BlogPostForm.css */
-.blog-post-form {
-  /* Add your styles for the form container */
+/* Hover effect for the recipe cards */
+.recipe:hover {
+  background-color: var(--complementary-hover-color); /* Complementary to Baby Pink */
+  color: var(--accent-color); /* Pale Gold text on hover */
 }
 
-/* Add more styles as needed for other components */
+.recipe h3 {
+  color: var(--dark-color); /* Dark Gray for recipe titles */
+}
+
+.recipe p {
+  color: var(--dark-color); /* Dark Gray for recipe text */
+}
