@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import './Home.css';
-import fakeRecipes from './FakeRecipe';
+import '../../styles/Home.css';
+import fakeRecipes from '../../FakeRecipe';
+
 
 function HomePage() {
   const location = useLocation();

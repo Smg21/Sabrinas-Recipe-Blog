@@ -1,13 +1,14 @@
 import React from 'react';
-import './appp.css';
+import './styles/app.css';
 import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import NavigationBar from './NavigationBar';
-import HomePage from './HomePage';
-import RecipesPage from './RecipesPage';
-import AboutMePage from './AboutMePage';
-import BlogPostForm from './BlogPostForm';
+
+import NavigationBar from './components/common/NavigationBar';
+import HomePage from './components/home/HomePage';
+import RecipesPage from './components/recipe/RecipesPage';
+import AboutMePage from './components/about/AboutMePage';
+import BlogPostForm from './components/blogpost/BlogPostForm';
 
 function App() {
   const [recipes, setRecipes] = useState([]); 
