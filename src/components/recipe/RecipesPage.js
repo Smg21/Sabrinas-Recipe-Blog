@@ -7,7 +7,7 @@ import RecipeForm from './RecipeForm';
 function RecipesPage({ recipes, addRecipe, sortBy, setSortBy }) {
   return (
     <div>
-      <h1>Recipes Page</h1>
+      <h1 class = "recipe">Recipes Page</h1>
       <RecipeForm addRecipe={addRecipe} />
       <RecipeSort setSortBy={setSortBy} />
       <div className="recipe-list">

@@ -4,8 +4,8 @@ function AboutMePage() {
   return (
     <div className="about-me">
       <p>About Sabrina and the food blog.</p>
+      <p>Hello I am Sabrina</p>
     </div>
   );
 }
-
 export default AboutMePage;
